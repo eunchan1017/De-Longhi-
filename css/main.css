@@ -1,0 +1,81 @@
+@charset 'utf-8';
+#main .inner {
+    width: 132rem;
+    margin: 0 auto;
+}
+/* visual section 시작 */
+#visual {
+    width: 100%;
+    height: 56rem;
+    position: relative;
+}
+#visual .visual-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    gap: 10rem;
+}
+#visual .visual-title .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#visual .visual-title .wrap h2 {
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+#visual .visual-title .wrap p {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+#visual .visual-title .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20rem;
+    height: 6.5rem;
+    background: var(--main--color);
+
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    border-radius: 4px;
+
+    transition: 0.4s;
+}
+
+#visual .visual-title .btn:hover {
+    color: var(--main--color);
+    background: #fff;
+}
+/* visual section 끝 */
+
+/* category section 시작 */
+#category {
+    width: 100%;
+    height: 32.9rem;
+    background: var(--sub--color);
+}
+.category-list {
+    width: 100%;
+    height: 18.9rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-list li a {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+}
