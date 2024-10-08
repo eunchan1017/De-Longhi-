@@ -19,11 +19,39 @@
     height: 6rem;
     color: #fff;
 }
+#header .member-wrap li {
+    position: relative;
+}
 #header .member-wrap li:nth-child(1) > a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+.language-list {
+    position: absolute;
+    top: -8rem;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5rem;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+.language-list.on {
+    top: 4.5rem;
+}
+.language-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.language-btn:hover {
+    background: var(--main--color);
 }
 #header nav {
     display: flex;
