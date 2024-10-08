@@ -1,13 +1,64 @@
 @charset 'utf-8';
+/* 메인에 공통된 설정 */
 #main .inner {
     width: 132rem;
     margin: 0 auto;
 }
+.sec-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--main--color);
+    text-align: center;
+}
+.sec-title span {
+    display: block;
+    font-size: 2rem;
+    color: #000;
+}
+/* best-product-list의 공통 디자인 시작*/
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.product-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.8rem;
+
+    width: 30rem;
+    height: 48rem;
+}
+.product-list .pic-images {
+    width: 30rem;
+    height: 31.6rem;
+}
+.product-list .wrap {
+    text-align: center;
+}
+.product-list .wrap h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main--color);
+}
+/* 첫번째 p태그를 제외한 모든 p태그에 적용 */
+.product-list .wrap p + p {
+    font-weight: 700;
+    color: #000;
+}
+/* best-product-list의 공통 디자인 끝*/
+
 /* visual section 시작 */
 #visual {
     width: 100%;
     height: 56rem;
     position: relative;
+}
+#visual figure {
+    width: 100%;
+    height: 100%;
 }
 #visual .visual-title {
     position: absolute;
@@ -28,6 +79,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    text-align: center;
 }
 #visual .visual-title .wrap h2 {
     font-size: 6.4rem;
@@ -66,9 +118,10 @@
     height: 32.9rem;
     background: var(--sub--color);
 }
-.category-list {
+#category .category-list {
     width: 100%;
     height: 18.9rem;
+    padding-top: 10rem;
 
     display: flex;
     justify-content: space-between;
@@ -79,3 +132,77 @@
     width: 15rem;
     height: 15rem;
 }
+.category-list li a h4 {
+    padding-top: 1rem;
+    text-align: center;
+    color: #000;
+}
+.category-list li a img {
+    border-radius: 50%;
+}
+/* category section 끝 */
+
+/* best-product section 시작 */
+#best-product {
+    margin-top: 6rem;
+}
+/* best-product section 끝 */
+
+/* new-product section 시작 */
+#new-product {
+    margin-top: 15rem;
+}
+/* new-product section 끝 */
+
+/* banner 시작 */
+.banner a {
+    display: block;
+    width: 100%;
+    height: 26.7rem;
+    margin-top: 15rem;
+}
+/* banner 끝 */
+
+/* reviews section 시작 */
+#reviews {
+    margin-top: 18rem;
+}
+.review-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.review-list li a {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    width: 41.3rem;
+    height: 52.3rem;
+}
+.review-list .review-pic {
+    /* width: 41.3rem; */
+    height: 33rem;
+}
+.review-list h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--main--color);
+}
+.review-list .name-wrap {
+    display: flex;
+    gap: 1.2rem;
+}
+.review-list .name-wrap .name {
+    color: #000;
+}
+.name-wrap::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    background: url(../img/star.png) no-repeat 0;
+}
+.review-list .wrap > p {
+    padding-top: 2rem;
+}
+
+/* reviews section 끝 */
