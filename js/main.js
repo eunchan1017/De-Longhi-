@@ -1,1 +1,1 @@
-const search = {};
+const languageBtn = $("#language");
