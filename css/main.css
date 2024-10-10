@@ -240,16 +240,9 @@
     margin-top: 18rem;
 }
 .review-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-.review-list li a {
-    display: flex;
-    flex-direction: column;
-    gap: 3.8rem;
-    width: 41.3rem;
-    height: 52.3rem;
+    width: 100%;
+    /* border: 1px solid #000; */
+    height: 50rem;
 }
 .review-list .review-pic {
     /* width: 41.3rem; */
