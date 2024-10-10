@@ -87,3 +87,25 @@
     height: 5.5rem;
     padding: 1.5rem;
 }
+.search-wrap {
+    display: none; /* 기본적으로 숨겨짐 */
+    position: absolute;
+    top: 16rem; /* 헤더 바로 아래 */
+    right: 6rem;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+.search-wrap.active {
+    display: flex;
+}
+.search-wrap input {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-wrap button {
+    padding: 5px;
+    cursor: pointer;
+}

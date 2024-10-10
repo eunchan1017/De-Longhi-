@@ -199,6 +199,14 @@
 .category-list li a img {
     border-radius: 50%;
 }
+.category-list li a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-list li:hover a img {
+    transform: scale(1.1);
+}
+
 /* category section 끝 */
 
 /* best-product section 시작 */

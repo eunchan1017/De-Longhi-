@@ -22,6 +22,7 @@
                                 <a href="#" id="language"
                                     ><img src="./img/ico-language.png" alt="icon-language" /> 한국어</a
                                 >
+
                                 <ul class="language-list">
                                     <li><a class="language-btn korea">한국어</a></li>
                                     <li><a class="language-btn English">English</a></li>
@@ -46,7 +47,14 @@
                         </ul>
                         <ul class="util-menu">
                             <li>
-                                <a href="#"><img src="./img/ico-search.png" alt="icon-search" /></a>
+                                <a href="javascript:void(0)" id="search-toggle"
+                                    ><img src="./img/ico-search.png" alt="icon-search"
+                                /></a>
+                                <!-- 검색창 추가 -->
+                                <div class="search-wrap" id="search-wrap">
+                                    <input type="text" placeholder="검색어를 입력하세요" id="search-input" />
+                                    <button id="search-btn">검색</button>
+                                </div>
                             </li>
                             <li>
                                 <a href="#"><img src="./img/ico-user.png" alt="icon-user" /></a>
