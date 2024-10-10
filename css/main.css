@@ -189,14 +189,19 @@
 .category-list li a {
     display: block;
     width: 15rem;
-    height: 15rem;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    /* height: 30px; */
 }
 .category-list li a h4 {
     padding-top: 1rem;
     text-align: center;
     color: #000;
 }
-.category-list li a img {
+.category-list .wrap {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
     border-radius: 50%;
 }
 .category-list li a img {
@@ -211,7 +216,7 @@
 
 /* best-product section 시작 */
 #best-product {
-    margin-top: 6rem;
+    margin-top: 16rem;
 }
 /* best-product section 끝 */
 
