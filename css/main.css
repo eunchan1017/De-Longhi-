@@ -239,10 +239,15 @@
 #reviews {
     margin-top: 18rem;
 }
-.review-list {
+.review-list-wrap {
     width: 100%;
     /* border: 1px solid #000; */
-    height: 50rem;
+    height: 52.3rem;
+    margin-top: 2rem;
+    position: relative;
+}
+.review-list {
+    height: 100%;
 }
 .review-list .review-pic {
     /* width: 41.3rem; */
@@ -252,6 +257,7 @@
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--main--color);
+    margin-top: 3rem;
 }
 .review-list .name-wrap {
     display: flex;
@@ -260,6 +266,23 @@
 .review-list .name-wrap .name {
     color: #000;
 }
+.btn-next {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+}
+.btn-prev {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+}
+.review-list-wrap .pagination {
+    position: absolute;
+    bottom: -2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
 .name-wrap::after {
     content: "";
     display: block;
