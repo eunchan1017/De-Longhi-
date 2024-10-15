@@ -1,0 +1,319 @@
+@charset "utf-8";
+.inner {
+    width: 112rem;
+    margin: 0 auto;
+}
+.buy-info {
+    margin-top: 8rem;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+.buy-info-wrap {
+    margin-top: 8.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* 슬라이드 영역 */
+.product-wrap {
+    width: 55rem;
+    height: 65.2rem;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.product-slider {
+    height: 54rem;
+}
+.product-menu-slider {
+    height: 9rem;
+    margin-top: 2rem;
+    width: 45.8rem;
+}
+/* swiper 버튼 디자인 */
+.button-prev,
+.button-next {
+    position: absolute;
+    width: 2.1rem;
+    height: 4.2rem;
+    z-index: 10;
+}
+.button-prev {
+    background: url(../img/left-arrow.png) no-repeat center center / 100% 100%;
+    top: 58rem;
+    left: 0;
+    opacity: 1;
+}
+.button-next {
+    background: url(../img/right-arrow.png) no-repeat center center / 100% 100%;
+    top: 58rem;
+    right: 0;
+    opacity: 1;
+}
+/* 버튼 디자인 끝 */
+
+/* 슬라이드 메뉴 디자인 */
+.product-menu-slider .swiper-slide {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.product-menu-slider .swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+.swiper-slide-thumb-active img {
+    position: relative;
+    z-index: 11;
+    border: 1px solid var(--main--color);
+}
+.swiper-button-disabled {
+    opacity: 0.3;
+}
+/* 슬라이드 메뉴 디자인 끝 */
+
+/* product-info 시작 */
+.product-info {
+    width: 55rem;
+}
+.best {
+    width: 5rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #ff4242;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.product-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.product-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--main--color);
+}
+.ico-wrap {
+    display: flex;
+    gap: 5rem;
+    position: relative;
+}
+.ico-wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 60%;
+    background: #999;
+}
+.ico-heart {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../img/heart-off.png) no-repeat center center / 100% 100%;
+}
+.ico-share {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../img/ico-share.png) no-repeat center center / 100% 100%;
+}
+/* product-info 끝 */
+
+/* price 시작 */
+.product-info > .price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 2.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* price 끝 */
+/* delivery-wrap 시작 */
+.delivery {
+    margin-top: 2.3rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5.6rem;
+}
+.delivery h4 {
+    font-weight: 600;
+    color: #000;
+}
+/* delivery-wrap 끝 */
+
+/* benefit 시작 */
+.benefit {
+    margin-top: 4.4rem;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 6.8rem;
+}
+.benefit h4 {
+    font-weight: 600;
+    color: #000;
+}
+/* benefit 끝 */
+/* quantity 시작 */
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10rem;
+
+    padding: 1rem;
+    margin-top: 4.6rem;
+    border-radius: 3px;
+    background: rgba(85, 85, 85, 0.1);
+}
+.quantity h5 {
+    color: #000;
+}
+.quantity-number {
+    display: flex;
+    justify-content: space-between;
+    width: 9rem;
+}
+.quantity-number .minus {
+    cursor: pointer;
+}
+.quantity-number .plus {
+    cursor: pointer;
+}
+.quantity-price {
+    font-weight: 700;
+    color: var(--main--color);
+}
+/* quantity 끝 */
+/* sum-price 시작 */
+.sum-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2.9rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.sum-price h4 {
+    color: #000;
+    font-weight: 600;
+}
+.sum-price > .price {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--main--color);
+    display: flex;
+    align-items: center;
+}
+.sum-price > .price span {
+    color: #555;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* sum-price 끝 */
+/* btn-wrap 시작 */
+.btn-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.sub-btn {
+    width: 26.5rem;
+    height: 5.4rem;
+    border: 1px solid #000;
+    background: #fff;
+    font-size: rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.shopping-cart {
+    color: var(--main--color);
+}
+.buy {
+    border-color: var(--main--color);
+    color: #fff;
+    background: var(--main--color);
+}
+/* sub-btn 끝 */
+/* 배너 디자인 */
+.banner {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin-top: 20rem;
+}
+/* 배너 디자인 끝 */
+/* 공통 item-tab 시작 */
+.item-tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-tab li {
+    width: 25%;
+}
+.item-tab li a {
+    display: flex;
+    width: 100%;
+    height: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* 공통 item-tab 끝 */
+/* info-tab 시작 */
+#info-tab {
+    margin-top: 16rem;
+}
+#info-tab li:nth-child(1) a {
+    font-weight: 800;
+    color: var(--main--color);
+    border-bottom: 3px solid var(--main--color);
+}
+/* info-tab 끝 */
+/* info-img 시작 */
+.info-img {
+    margin-top: 6rem;
+    width: 100%;
+    height: 457.6rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* info-img 끝 */
+/* review-tab 시작 */
+#review-tab {
+    margin-top: 16rem;
+}
+#review-tab li:nth-child(2) a {
+    font-weight: 800;
+    color: var(--main--color);
+    border-bottom: 3px solid var(--main--color);
+}
+/* review-tab 끝 */
+.review-title {
+    color: var(--main--color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 6rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
