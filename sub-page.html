@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="./css/Footer.css" />
         <link rel="stylesheet" href="./css/sub.css" />
         <script src="./js/jquery-3.7.1.min.js"></script>
-        <script src="./js/main.js" defer></script>
+        <script src="./js/script.js" defer></script>
         <title>De-Longhi</title>
     </head>
     <body>
@@ -186,6 +186,11 @@
                 class="banner"
             >
                 <img src="./img/banner.png" alt="banner" />
+                <h5>
+                    프리미엄 홈 바리스타 라이프의 시작 <br />드롱기 라 스페셜리스타<span
+                        >라 스페셜리스트의 바리스타 터치로 최고의 커피를 즐겨보세요</span
+                    >
+                </h5>
             </a>
             <div class="inner">
                 <section id="info">
@@ -193,7 +198,7 @@
                     <ul class="item-tab" id="info-tab">
                         <li><a href="#info-tab">상세설명</a></li>
                         <li><a href="#review-tab">상품후기 (1)</a></li>
-                        <li><a href="#buy-tab">구매안내</a></li>
+                        <li><a href="#buy-tab">상품정보</a></li>
                         <li><a href="#faq-tab">상품문의 (0)</a></li>
                     </ul>
                     <figure class="info-img"><img src="./img/temp_14350355152291.jpg" alt="info-img" /></figure>
@@ -202,7 +207,7 @@
                     <ul class="item-tab" id="review-tab">
                         <li><a href="#info-tab">상세설명</a></li>
                         <li><a href="#review-tab">상품후기 (1)</a></li>
-                        <li><a href="#buy-tab">구매안내</a></li>
+                        <li><a href="#buy-tab">상품정보</a></li>
                         <li><a href="#faq-tab">상품문의 (0)</a></li>
                     </ul>
                     <h3 class="review-title">상품리뷰</h3>
@@ -256,11 +261,120 @@
                             <div class="sort-filter">최신순</div>
                             <div class="sort-filter">별점순</div>
                         </div>
-                        <div class="review-filter-search">
+                        <a href="#" class="review-filter-search">
                             <img src="./img/ico-search.png" alt="ico-search" />
+                        </a>
+                    </div>
+                    <div class="review-page-wrap">
+                        <div class="review-page">
+                            <div class="star-img">
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                            </div>
+                            <div class="user-name">정**님의 리뷰</div>
+                            <p class="review-content">
+                                사용하기 너무 편합니다. 라떼는 부드럽고 에스프레소는 향기가 풍부하고 중후해서 너무
+                                즐거운 경험이였습니다.
+                            </p>
+                            <div class="interaction-wrap">
+                                <div class="interaction">
+                                    <div class="like-wrap">
+                                        <a href="#" class="like"><img src="./img/btn-like.png" alt="ico-like" /></a>
+                                        0
+                                    </div>
+                                    <div class="bad-wrap">
+                                        <a href="#" class="bad"><img src="./img/btn-bad.png" alt="ico-bad" /></a>
+                                    </div>
+                                    <a href="#" class="chat-wrap">
+                                        <span>댓글(1)</span>
+                                        <div class="chat"><img src="./img/chat-arrow.png" alt="ico-arrow" /></div>
+                                    </a>
+                                </div>
+                                <a href="#" class="block">신고 및 차단</a>
+                            </div>
+                        </div>
+                        <div class="review-page">
+                            <div class="star-img">
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                            </div>
+                            <div class="user-name">나**님의 리뷰</div>
+                            <p class="review-content">상품 품질이 좋습니다. 마음에 들어요!</p>
+                            <div class="interaction-wrap">
+                                <div class="interaction">
+                                    <div class="like-wrap">
+                                        <a href="#" class="like"><img src="./img/btn-like.png" alt="ico-like" /></a>
+                                        0
+                                    </div>
+                                    <div class="bad-wrap">
+                                        <a href="#" class="bad"><img src="./img/btn-bad.png" alt="ico-bad" /></a>
+                                    </div>
+                                    <a href="#" class="chat-wrap">
+                                        <span>댓글(1)</span>
+                                        <div class="chat"><img src="./img/chat-arrow.png" alt="ico-arrow" /></div>
+                                    </a>
+                                </div>
+                                <a href="#" class="block">신고 및 차단</a>
+                            </div>
+                        </div>
+                        <div class="review-page">
+                            <div class="star-img">
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                                <figure><img src="./img/sub-star.png" alt="sub-star" /></figure>
+                            </div>
+                            <div class="user-name">너**님의 리뷰</div>
+                            <p class="review-content">
+                                커피 잘 나오고 맛있어요~ 급히 필요한 거라 택배로 진행했는데 바로 보내주셨어요.
+                                택배기사님이 무겁다고 뭐라 하시고 지연시키셔서… 주말 지나고 왔지만 판매자분은 발송 바로
+                                해주셔서 감사했습니다!
+                            </p>
+                            <div class="interaction-wrap">
+                                <div class="interaction">
+                                    <div class="like-wrap">
+                                        <a href="#" class="like"><img src="./img/btn-like.png" alt="ico-like" /></a>
+                                        0
+                                    </div>
+                                    <div class="bad-wrap">
+                                        <a href="#" class="bad"><img src="./img/btn-bad.png" alt="ico-bad" /></a>
+                                    </div>
+                                    <a href="#" class="chat-wrap">
+                                        <span>댓글(1)</span>
+                                        <div class="chat"><img src="./img/chat-arrow.png" alt="ico-arrow" /></div>
+                                    </a>
+                                </div>
+                                <a href="#" class="block">신고 및 차단</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="review-page"></div>
+                </section>
+                <section id="buy">
+                    <ul class="item-tab" id="buy-tab">
+                        <li><a href="#info-tab">상세설명</a></li>
+                        <li><a href="#review-tab">상품후기 (1)</a></li>
+                        <li><a href="#buy-tab">상품정보</a></li>
+                        <li><a href="#faq-tab">상품문의 (0)</a></li>
+                    </ul>
+                    <h3 class="buy-title">상품정보</h3>
+                    <figure><img src="./img/sub-info.jpg" alt="sub-info" /></figure>
+                </section>
+                <section id="faq">
+                    <ul class="item-tab" id="faq-tab">
+                        <li><a href="#info-tab">상세설명</a></li>
+                        <li><a href="#review-tab">상품후기 (1)</a></li>
+                        <li><a href="#buy-tab">상품정보</a></li>
+                        <li><a href="#faq-tab">상품문의 (0)</a></li>
+                    </ul>
+                    <h3 class="faq-title">상품문의</h3>
+                    <div class="faq-page">게시물이 없습니다.</div>
                 </section>
             </div>
         </main>

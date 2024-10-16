@@ -111,7 +111,6 @@ $(".English").on("click", () => {
 $(".English").on("click", () => {
     enChange("ko");
 });
-console.log($("#search-input").attr("placeholder", "bol4.bstage.in 입력하세요"));
 // 서브 구매 페이지
 var productMenuSlider = new Swiper(".product-menu-slider", {
     spaceBetween: 10,
@@ -128,4 +127,10 @@ var productSlider = new Swiper(".product-slider", {
     thumbs: {
         swiper: productMenuSlider,
     },
+});
+const filterTab = $(".review-filter-select .sort-filter");
+const sortFilter = $(".sort-filter");
+filterTab.on("click", function () {
+    filterTab.removeClass("on");
+    $(this).addClass("on");
 });

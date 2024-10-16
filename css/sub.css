@@ -260,6 +260,22 @@
     width: 100%;
     height: 25rem;
     margin-top: 20rem;
+    position: relative;
+}
+.banner h5 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45rem;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.banner span {
+    display: block;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 2.5rem;
 }
 /* 배너 디자인 끝 */
 /* 공통 item-tab 시작 */
@@ -274,18 +290,17 @@
 .item-tab li a {
     display: flex;
     width: 100%;
-    height: 2.4rem;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     font-weight: 600;
     color: #000;
     cursor: pointer;
-    padding-bottom: 1rem;
+    padding: 1.5rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 /* 공통 item-tab 끝 */
-/* info-tab 시작 */
+/* info-tab */
 #info-tab {
     margin-top: 16rem;
 }
@@ -294,7 +309,23 @@
     color: var(--main--color);
     border-bottom: 3px solid var(--main--color);
 }
-/* info-tab 끝 */
+/* but-tab */
+#buy-tab {
+    margin-top: 18rem;
+}
+#buy-tab li:nth-child(3) a {
+    font-weight: 800;
+    color: var(--main--color);
+    border-bottom: 3px solid var(--main--color);
+}
+#faq-tab {
+    margin-top: 18rem;
+}
+#faq-tab li:nth-child(4) a {
+    font-weight: 800;
+    color: var(--main--color);
+    border-bottom: 3px solid var(--main--color);
+}
 /* info-img 시작 */
 .info-img {
     margin-top: 6rem;
@@ -454,3 +485,99 @@
     cursor: pointer;
 }
 /* review-filter 끝 */
+/* review-page 시작 */
+.review-page {
+    margin: 4rem 0;
+    padding: 0 1rem;
+}
+.review-page .star-img {
+    display: flex;
+}
+.review-page .star-img figure {
+    width: 24px;
+    height: 24px;
+}
+.review-page .user-name {
+    font-weight: 700;
+    color: #000;
+    margin-top: 2rem;
+}
+.review-page .review-content {
+    margin-top: 1.5rem;
+}
+.review-page .interaction-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.review-page .interaction {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.review-page .interaction .like-wrap {
+    display: flex;
+    gap: 1rem;
+}
+.review-page .interaction .like {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+.review-page .interaction .bad {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+.review-page .interaction .chat-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+.review-page .interaction .chat {
+    display: block;
+    width: 24px;
+    height: 12px;
+}
+.interaction-wrap .block {
+    color: #000;
+    font-weight: 700;
+}
+/* but section 시작 */
+#buy .buy-title {
+    font-size: 3.2rem;
+    color: var(--main--color);
+    margin-top: 6rem;
+    font-weight: 700;
+    padding: 0rem 1rem;
+}
+#buy figure {
+    margin-top: 3rem;
+}
+/* but section 끝 */
+/* faq section 시작 */
+#faq .faq-title {
+    font-size: 3.2rem;
+    color: var(--main--color);
+    margin-top: 6rem;
+    font-weight: 700;
+    padding: 0rem 1rem;
+}
+#faq .faq-page {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+
+    border-top: 1px solid var(--black40);
+    border-bottom: 1px solid var(--black40);
+}
+/* faq section 끝 */
