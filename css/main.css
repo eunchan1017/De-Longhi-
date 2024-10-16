@@ -41,17 +41,6 @@
     overflow: hidden;
 }
 
-.product-list .pic-images::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-}
-
 .product-list li a:hover .pic-images::after {
     display: block;
 }
@@ -70,41 +59,6 @@
 .product-list .wrap p + p {
     font-weight: 700;
     color: #000;
-}
-
-/* 버튼 스타일 */
-.card-buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-.card-buttons button {
-    background-color: var(--main--color);
-    width: 10rem;
-    height: 5rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.card-buttons button:hover {
-    background-color: var(--sub--color);
-    color: #000;
-}
-
-.product-list li a:hover .card-buttons {
-    opacity: 1;
 }
 
 /* best-product-list의 공통 디자인 끝*/

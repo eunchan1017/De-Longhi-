@@ -1,258 +1,257 @@
-<DOCTYPE html>
-    <html lang="ko">
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <link rel="stylesheet" href="./css/reset.css" />
-            <link rel="stylesheet" href="./css/common.css" />
-            <link rel="stylesheet" href="./css/Header.css" />
-            <link rel="stylesheet" href="./css/Footer.css" />
-            <link rel="stylesheet" href="./css/sub.css" />
-            <script src="./js/jquery-3.7.1.min.js"></script>
-            <script src="./js/main.js" defer></script>
-            <title>De-Longhi</title>
-        </head>
-        <body>
-            <!-- header#header+main#main+footer#footer -->
-            <header id="header">
-                <div class="top-wrap">
-                    <div class="inner">
-                        <ul class="member-wrap">
-                            <li>
-                                <a href="#" id="language">
-                                    <img src="./img/ico-language.png" alt="icon-language" /> 한국어
-                                </a>
-                                <ul class="language-list">
-                                    <li><a class="language-btn korea">한국어</a></li>
-                                    <li><a class="language-btn English">English</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/Header.css" />
+        <link rel="stylesheet" href="./css/Footer.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/main.js" defer></script>
+        <title>De-Longhi</title>
+    </head>
+    <body>
+        <!-- header#header+main#main+footer#footer -->
+        <header id="header">
+            <div class="top-wrap">
                 <div class="inner">
-                    <nav>
-                        <h1 class="logo">
-                            <a href="index.html"><img src="./img/header-logo.png" alt="header-logo" /></a>
-                        </h1>
-                        <ul class="gnb">
-                            <li>
-                                <a href="#">홈</a>
-                                <ul class="submenu">
-                                    <li><a href="">홈으로</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">카테고리</a>
-                                <ul class="submenu">
-                                    <li><a href="">전자동 커피머신</a></li>
-                                    <li><a href="">반자동 커피머신</a></li>
-                                    <li><a href="">전자 주전자</a></li>
-                                    <li><a href="">라디에이터</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">이벤트</a>
-                                <ul class="submenu">
-                                    <li><a href="">이벤트</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">고객후기</a>
-                                <ul class="submenu">
-                                    <li><a href="">커피머신 후기</a></li>
-                                    <li><a href="">전자 주전자 후기</a></li>
-                                    <li><a href="">기타 제품 후기</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">회사 소개</a>
-                                <ul class="submenu">
-                                    <li><a href="">오시는 길</a></li>
-                                    <li><a href="">CEO</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="util-menu">
-                            <li>
-                                <a href="javascript:void(0)" id="search-toggle"
-                                    ><img src="./img/ico-search.png" alt="icon-search"
-                                /></a>
-                                <!-- 검색창 추가 -->
-                                <div class="search-wrap" id="search-wrap">
-                                    <input type="text" placeholder="검색어를 입력하세요" id="search-input" />
-                                    <button id="search-btn">검색</button>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./img/ico-user.png" alt="icon-user" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./img/ico-market.png" alt="icon-market" /></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="back"></div>
-            </header>
-            <main id="main">
-                <section class="buy-info">
-                    <h2><i class="hidden">프리마돈나 전자동 에스프레소 머신</i></h2>
-                    <div class="inner">
-                        <ul class="breadcrumb">
-                            <li><a href="#">홈</a></li>
-                            <li><a href="#">></a></li>
-                            <li><a href="#">카테고리</a></li>
-                            <li><a href="#">></a></li>
-                            <li><a href="#">전자동 커피머신</a></li>
-                        </ul>
-                        <div class="buy-info-wrap">
-                            <div class="product-wrap">
-                                <div class="button-prev"></div>
-                                <div class="button-next"></div>
-                                <div class="swiper product-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="./img/sub-img1.jpg" alt="sub-img1" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img2.jpg" alt="sub-img2" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img3.jpg" alt="sub-img3" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img4.jpg" alt="sub-img4" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img5.jpg" alt="sub-img5" /></div>
-                                    </div>
-                                </div>
-                                <div class="swiper product-menu-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="./img/sub-img1.jpg" alt="sub-img1" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img2.jpg" alt="sub-img2" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img3.jpg" alt="sub-img3" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img4.jpg" alt="sub-img4" /></div>
-                                        <div class="swiper-slide"><img src="./img/sub-img5.jpg" alt="sub-img5" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info">
-                                <div class="best">best</div>
-                                <div class="product-title-wrap">
-                                    <h3 class="product-title">프리마돈나 전자동 에스프레소 머신</h3>
-                                    <ul class="ico-wrap">
-                                        <li>
-                                            <a class="ico-heart" href="#"><i class="hidden">좋아요</i></a>
-                                        </li>
-                                        <li>
-                                            <a class="ico-share" href="#"><i class="hidden">공유하기</i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="price" id="price">3,500,000원</p>
-                                <div class="delivery">
-                                    <h4>배송비</h4>
-                                    <p>4000원 (30,000원 이상 무료)</p>
-                                </div>
-                                <div class="benefit">
-                                    <h4>혜택</h4>
-                                    <div class="benefit-wrap">
-                                        <p>신규 가입시, 1만원 쿠폰증정</p>
-                                        <p>리뷰 작성시, 최대 3천원 적립금 지급</p>
-                                        <p>회원 구매시, 등급별 최대 10% 즉시할인</p>
-                                    </div>
-                                </div>
-                                <div class="quantity">
-                                    <h5>프리마돈나 전자동 에스프레소</h5>
-                                    <div class="quantity-number">
-                                        <button class="minus">-</button>
-                                        <p id="number">1</p>
-                                        <button class="plus">+</button>
-                                    </div>
-                                    <p class="quantity-price" id="price">3,500,000원</p>
-                                </div>
-                                <div class="sum-price">
-                                    <h4>총 합계 금액</h4>
-                                    <div class="price">3,500,000원 <span>(1개)</span></div>
-                                </div>
-                                <div class="btn-wrap">
-                                    <button class="sub-btn shopping-cart">장바구니</button>
-                                    <button class="sub-btn buy">구매하기</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <a
-                    href="https://www.delonghi.com/ko-kr/jepum/cuhpee/maenual-espresso-meiker/la-specialista-paemili"
-                    class="banner"
-                >
-                    <img src="./img/banner.png" alt="banner" />
-                </a>
-                <div class="inner">
-                    <ul class="item-tab" id="info-tab">
-                        <li><a href="#info-tab">상세설명</a></li>
-                        <li><a href="#review-tab">상품후기 (1)</a></li>
-                        <li><a href="#buy-tab">구매안내</a></li>
-                        <li><a href="#faq-tab">상품문의 (0)</a></li>
-                    </ul>
-                    <figure class="info-img"><img src="./img/temp_14350355152291.jpg" alt="info-img" /></figure>
-                    <ul class="item-tab" id="review-tab">
-                        <li><a href="#info-tab">상세설명</a></li>
-                        <li><a href="#review-tab">상품후기 (1)</a></li>
-                        <li><a href="#buy-tab">구매안내</a></li>
-                        <li><a href="#faq-tab">상품문의 (0)</a></li>
-                    </ul>
-                    <h3 class="review-title">상품리뷰</h3>
-                </div>
-            </main>
-            <footer id="footer">
-                <h2 class="foot-logo">
-                    <a href="#"><img src="./img/footer-logo.png" alt="foot-logo" /></a>
-                </h2>
-                <div class="foot-line-wrap">
-                    <div class="inner">
-                        <ul class="foot-title">
-                            <li><a href="#">회사 소개</a></li>
-                            <li><a href="#">고객 서비스</a></li>
-                            <li><a href="#">이용 약관</a></li>
-                            <li><a href="#">개인정보 처리방침</a></li>
-                            <li><a href="#">연락처 정보</a></li>
-                            <li><a href="#">자주 묻는 질문</a></li>
-                            <li><a href="#">제품 등록</a></li>
-                            <li><a href="#">서비스 센터 찾기</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="inner">
-                    <div class="footer-wrap">
-                        <div class="foot-con-wrap">
-                            <p>
-                                드롱기코리아 주식회사 대표자: 에릭드카스텔바작 사업자등록번호: 107-87-69257
-                                통신판매업신고: 2016-서울 서초-0448 서울시 서초구 강남대로 623(잠원동)
-                            </p>
-                            <p>
-                                문의 : 02-6000-9800 / delonghivip.korea@delonghigroup.com 드롱기 컨셉 스토어 (강남)
-                                02-6080-0024 (광화문) 02-6000-9851 (부산) 051-746-0029 (양재) 02-6000-9852
-                            </p>
-                        </div>
-                        <div class="foot-wrap">
-                            <strong class="copyright">
-                                © De’Longhi Appliances S.r.l. Via L. Seitz, 47, 31100 Treviso, Italy 모든 권리 보유
-                            </strong>
-                            <ul class="media">
-                                <li>
-                                    <a href="#"><img src="./img/sns-youtube.png" alt="youtube-ico" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./img/sns-Facebook.png" alt="facebook-ico" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./img/sns-Instagram.png" alt="instagram-ico" /></a>
-                                </li>
+                    <ul class="member-wrap">
+                        <li>
+                            <a href="#" id="language">
+                                <img src="./img/ico-language.png" alt="icon-language" /> 한국어
+                            </a>
+                            <ul class="language-list">
+                                <li><a class="language-btn korea">한국어</a></li>
+                                <li><a class="language-btn English">English</a></li>
                             </ul>
+                        </li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html"><img src="./img/header-logo.png" alt="header-logo" /></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">홈</a>
+                            <ul class="submenu">
+                                <li><a href="">홈으로</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">카테고리</a>
+                            <ul class="submenu">
+                                <li><a href="">전자동 커피머신</a></li>
+                                <li><a href="">반자동 커피머신</a></li>
+                                <li><a href="">전자 주전자</a></li>
+                                <li><a href="">라디에이터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="submenu">
+                                <li><a href="">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객후기</a>
+                            <ul class="submenu">
+                                <li><a href="">커피머신 후기</a></li>
+                                <li><a href="">전자 주전자 후기</a></li>
+                                <li><a href="">기타 제품 후기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">회사 소개</a>
+                            <ul class="submenu">
+                                <li><a href="">오시는 길</a></li>
+                                <li><a href="">CEO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="util-menu">
+                        <li>
+                            <a href="javascript:void(0)" id="search-toggle"
+                                ><img src="./img/ico-search.png" alt="icon-search"
+                            /></a>
+                            <!-- 검색창 추가 -->
+                            <div class="search-wrap" id="search-wrap">
+                                <input type="text" placeholder="검색어를 입력하세요" id="search-input" />
+                                <button id="search-btn">검색</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/ico-user.png" alt="icon-user" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/ico-market.png" alt="icon-market" /></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="back"></div>
+        </header>
+        <main id="main">
+            <section class="buy-info">
+                <h2><i class="hidden">프리마돈나 전자동 에스프레소 머신</i></h2>
+                <div class="inner">
+                    <ul class="breadcrumb">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">></a></li>
+                        <li><a href="#">카테고리</a></li>
+                        <li><a href="#">></a></li>
+                        <li><a href="#">전자동 커피머신</a></li>
+                    </ul>
+                    <div class="buy-info-wrap">
+                        <div class="product-wrap">
+                            <div class="button-prev"></div>
+                            <div class="button-next"></div>
+                            <div class="swiper product-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/sub-img1.jpg" alt="sub-img1" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img2.jpg" alt="sub-img2" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img3.jpg" alt="sub-img3" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img4.jpg" alt="sub-img4" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img5.jpg" alt="sub-img5" /></div>
+                                </div>
+                            </div>
+                            <div class="swiper product-menu-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/sub-img1.jpg" alt="sub-img1" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img2.jpg" alt="sub-img2" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img3.jpg" alt="sub-img3" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img4.jpg" alt="sub-img4" /></div>
+                                    <div class="swiper-slide"><img src="./img/sub-img5.jpg" alt="sub-img5" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="best">best</div>
+                            <div class="product-title-wrap">
+                                <h3 class="product-title">프리마돈나 전자동 에스프레소 머신</h3>
+                                <ul class="ico-wrap">
+                                    <li>
+                                        <a class="ico-heart" href="#"><i class="hidden">좋아요</i></a>
+                                    </li>
+                                    <li>
+                                        <a class="ico-share" href="#"><i class="hidden">공유하기</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="price" id="price">3,500,000원</p>
+                            <div class="delivery">
+                                <h4>배송비</h4>
+                                <p>4000원 (30,000원 이상 무료)</p>
+                            </div>
+                            <div class="benefit">
+                                <h4>혜택</h4>
+                                <div class="benefit-wrap">
+                                    <p>신규 가입시, 1만원 쿠폰증정</p>
+                                    <p>리뷰 작성시, 최대 3천원 적립금 지급</p>
+                                    <p>회원 구매시, 등급별 최대 10% 즉시할인</p>
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <h5>프리마돈나 전자동 에스프레소</h5>
+                                <div class="quantity-number">
+                                    <button class="minus">-</button>
+                                    <p id="number">1</p>
+                                    <button class="plus">+</button>
+                                </div>
+                                <p class="quantity-price" id="quantity-price">3,500,000원</p>
+                            </div>
+                            <div class="sum-price">
+                                <h4>총 합계 금액</h4>
+                                <div class="price">3,500,000원 <span>(1개)</span></div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="sub-btn shopping-cart">장바구니</button>
+                                <button class="sub-btn buy">구매하기</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </body>
-    </html>
-</DOCTYPE>
+            </section>
+            <a
+                href="https://www.delonghi.com/ko-kr/jepum/cuhpee/maenual-espresso-meiker/la-specialista-paemili"
+                class="banner"
+            >
+                <img src="./img/banner.png" alt="banner" />
+            </a>
+            <div class="inner">
+                <ul class="item-tab" id="info-tab">
+                    <li><a href="#info-tab">상세설명</a></li>
+                    <li><a href="#review-tab">상품후기 (1)</a></li>
+                    <li><a href="#buy-tab">구매안내</a></li>
+                    <li><a href="#faq-tab">상품문의 (0)</a></li>
+                </ul>
+                <figure class="info-img"><img src="./img/temp_14350355152291.jpg" alt="info-img" /></figure>
+                <ul class="item-tab" id="review-tab">
+                    <li><a href="#info-tab">상세설명</a></li>
+                    <li><a href="#review-tab">상품후기 (1)</a></li>
+                    <li><a href="#buy-tab">구매안내</a></li>
+                    <li><a href="#faq-tab">상품문의 (0)</a></li>
+                </ul>
+                <h3 class="review-title">상품리뷰</h3>
+            </div>
+        </main>
+        <footer id="footer">
+            <h2 class="foot-logo">
+                <a href="#"><img src="./img/footer-logo.png" alt="foot-logo" /></a>
+            </h2>
+            <div class="foot-line-wrap">
+                <div class="inner">
+                    <ul class="foot-title">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">고객 서비스</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">연락처 정보</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">제품 등록</a></li>
+                        <li><a href="#">서비스 센터 찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="footer-wrap">
+                    <div class="foot-con-wrap">
+                        <p>
+                            드롱기코리아 주식회사 대표자: 에릭드카스텔바작 사업자등록번호: 107-87-69257 통신판매업신고:
+                            2016-서울 서초-0448 서울시 서초구 강남대로 623(잠원동)
+                        </p>
+                        <p>
+                            문의 : 02-6000-9800 / delonghivip.korea@delonghigroup.com 드롱기 컨셉 스토어 (강남)
+                            02-6080-0024 (광화문) 02-6000-9851 (부산) 051-746-0029 (양재) 02-6000-9852
+                        </p>
+                    </div>
+                    <div class="foot-wrap">
+                        <strong class="copyright">
+                            © De’Longhi Appliances S.r.l. Via L. Seitz, 47, 31100 Treviso, Italy 모든 권리 보유
+                        </strong>
+                        <ul class="media">
+                            <li>
+                                <a href="#"><img src="./img/sns-youtube.png" alt="youtube-ico" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/sns-Facebook.png" alt="facebook-ico" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/sns-Instagram.png" alt="instagram-ico" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
